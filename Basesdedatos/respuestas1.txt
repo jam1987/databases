@@ -1,0 +1,30 @@
+NOMBREPROP                     CEDULAPR
+------------------------------ --------
+Rodrigo Rodriguez              90000000
+
+
+DIRECCION                                            ALICUOTA
+-------------------------------------------------- ----------
+Calle 10, Parcela 20, Urb. Robledal                      7.14
+
+
+SUM(MONTO)
+----------
+  75644.32
+
+
+FECHA     CONCEPTO                            MONTO
+--------- ------------------------------ ----------
+01-OCT-09 AGUA                              5555.55
+01-OCT-09 AGUA                              7896.46
+01-OCT-09 AGUA                              9870.35
+01-OCT-09 AGUA                                10000
+01-OCT-09 AGUA                                 6700
+01-OCT-09 AGUA                               7000.7
+01-OCT-09 AGUA                                 6000
+01-OCT-09 AGUA                                 7654
+01-OCT-09 AGUA                              5432.19
+01-OCT-09 AGUA                              9535.07
+
+10 rows selected.
+

@@ -1,0 +1,147 @@
+EQUIPO 3
+JULIO ABREU
+JAIDIBETH MELO
+
+
+2. Para las aplicaciones anteriormente descritas, usted deberá estudiar la sintaxis de definición de
+    procedimientos y funciones en SQL (CREATE PROCEDURE y CREATE FUNCTION). Además,
+    deberá estudiar las instrucciones de PL/SQL para declarar variables, definir y manipular
+    cursores, así como las estructuras de control del lenguaje. En particular, usted deberá resolver
+     los siguientes aspectos:
+    a) ¿Cómo se puede definir una variable que tenga el mismo tipo de datos que una columna de
+     una tabla?e
+RESPUESTA: Para esto se utiliza el prefijo %TYPE. Primero se crea la variable y se le coloca
+al lado la tabla.columna de esa tabla punto %type. Ejm
+ v credins ESTUDIANTE.credins%type
+
+
+b) ¿Cuál es la diferencia entre los comandos "SELECT monto FROM condominio;" y "SELECT
+ monto INTO vmonto FROM condominio;"?
+
+RESPUESTA: En la primera Select todos los montos asociados al condominio y en la segunda
+Lo selecionas y lo guardas en una variable llamada vmonto.
+
+c) ¿Qué es un cursor? ¿Cómo se crea? ¿Puede un cursor ser parametrizado?
+RESPUESTA: Un curso es un area de trabajo sobre una o mas tablas que se crea
+cuando se ejecuta una instruccion en sql. Se crea de esta manera
+
+CURSOR nombre_cursor IS
+instruccion_select;
+OPEN nombre_cursor;
+FETCH nombre_cursor INTO
+[variable [,variable, .......] | nombre_registro];
+CLOSE nombre_cursor ;
+
+d) ¿Qué significan las operaciones OPEN, FETCH y CLOSE sobre cursores?
+RESPUESTA: OPEN  es la instruccion que habre el cursor, FETCH es la tupla 
+CLOSE cierra el cursor.
+
+e) ¿Cómo se define la variable donde se van a almacenar los valores tomados de un cursor?
+
+RESPUESTA: La variable se define como ROW%TYPE esto quiere decir que va a tener los mismos
+atributos que la tupla de la consulta retornada.
+
+
+
+
+f) ¿Qué significan los atributos de cursor: %NOTFOUND, %ROWCOUNT?
+RESPUESTA:  ROWCOUNT numero de filas afectadas por la instruccion sql mas reciente
+NOTFOUND atributo booleano que es true si la ultima instruccion sql no afecto filas.
+
+g) ¿Qué cláusula de la definición de un cursor permite actualizar las tuplas del mismo?
+
+Para actualizar (UPDATE) alguna fila de un cursor
+se debe incluir la cláusula FOR UPDATE en la
+instrucción SELECT del cursor y utilizar la
+cláusula WHERE CURRENT OF para referenciar
+el current row de un cursor explícito.
+
+
+h) ¿Cómo se puede referenciar la posición actual de un cursor en la cláusula WHERE?
+
+
+
+i) ¿Cómo se expresa una sentencia condicional en PL/SQL?
+
+
+IF condicion THEN
+instrucciones;
+[ELSE
+instrucciones;]
+END IF
+
+j) ¿Cuáles son las formas de expresar un ciclo en PL/SQL?
+Respuesta: Hay varias maneras de especificar los ciclos 
+
+LOOP BASICO: acciones repetitivas sin condicion.
+LOOP
+instrucción1;
+instrucción2;
+.....
+EXIT [WHEN condicion];
+END LOOP;
+
+LOOP FOR
+FOR contador IN [REVERSE]
+limite_inferior ... limite_superior LOOP
+instruccion1;
+instruccion2;
+...
+END LOOP;
+
+LOOP WHILE
+
+
+WHILE condicion LOOP
+instruccion1;
+instruccion2;
+...
+END LOOP;
+
+7. ¿Cuáles son los tipos de eventos en los que puede activarse un “trigger”?.
+RESPUESTA: Son procedimientos almacenados que se ejecutan implicitamente (o se disparan) cuando 
+la tabla con las que estan asociados se realiza una insercion, borrado o modificacion. 
+Insert, Update, Delete
+
+8. Los “triggers” permiten indicar el orden de ejecución del código asociado a un “trigger” con
+respecto a la operación que dio pie al evento que lo disparó. ¿Cuáles son las tres posibles
+órdenes que pueden establecerse?
+BEFORE: Execute the trigger body before the
+triggering DML event on a table.
+AFTER: Execute the trigger body after the triggering
+DML event on a table.
+INSTEAD OF: Execute the trigger body instead of the
+triggering statement. This is used for views that are
+not otherwise modifiable.
+
+10. ¿Qué diferencia existe entre un “trigger” a nivel de filas (definidos utilizando la cláusula FOR
+EACH ROW) y un “trigger” a nivel de tabla (aquel definido sin utilizar la cláusula FOR EACH
+ROW?
+Los de fila se activa una vez cada fila afectada por la
+orden que porvoco el disparo.
+Los disparadores con nivel de orden se activan solo
+una vez, antes o despues de la orden. Los
+disparadores con nivel de fila se identifican por la
+clausula FOR EACH ROW en la definicion del
+disparador.
+
+
+11. ¿Para que sirve la cláusula WHEN? ¿Es aplicable para “triggers” a nivel de filas? ¿Es aplicable
+para “triggers” a nivel de tablas?
+
+
+
+
+12. ¿Qué utilidad le encuentra a los predicados INSERTING, DELETING y UPDATING? ¿Qué
+relación existe entre estos predicados y los posibles eventos que pueden disparar la ejecución
+de un “trigger”?
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,15 @@
+ ****************************PREGUNTA 1****************************
+
+
+Respuestas a todos los items de la pregunta nro. 1 del Pre-taller
+
+1.1. ¿Qué diferencia existe entre una tabla y una vista?
+
+1.1 La diferencia entre una tabla y una vista es, que la tabla ya tiene existencia fisica dentro de la base de datos, 		es decir, ya la tabla existe desde el primer momento que se crea la base de datos dentro del manejador. Una 		vista, en cambio, es una tabla virtual, es decir, es una tabla que se crea en un momento determinado para 		hacer que una consulta sea mas facil, y no en el momento de la creacion de la base de datos. Una vista no 		pertenece a la base de datos en si, contiene datos pertenecientes a la misma, pero no por eso la hace parte 		de la base de datos.
+
+1. 2. ¿Puede una vista ser utilizada como una tabla en una consulta?
+
+1.2 Una vista puede ser utilizada como una tabla al momento de la consulta, ya que al cargar el comando de la 		creacion de la vista deseada en el manejador, se crea una tabla virtual representando a dicha vista, y luego, 		para el momento de hacer una consulta, se puede accesar a dicha tabla sin ningun problema, lo que facilita la 		busqueda en ciertas consultas, ya que hay algunas consultas que requieren de una tabla preliminar para poder 		seguir en la construccion de dicha consulta, y con las vistas, se hace mas eficiente la busqueda.
+
+1.3. ¿Cómo pueden asignársele nombres a las columnas que devuelve una vista?
+

@@ -1,0 +1,193 @@
+
+NOMBRE                                                                          
+--------------------------------------------------                              
+PEDRO PEREZ                                                                     
+
+
+NOMBRE                                                                          
+--------------------------------------------------                              
+JESUS HERNANDEZ                                                                 
+LUZ OVIEDO                                                                      
+MARCOS MILLAN                                                                   
+MARIA MATOS                                                                     
+MARTA SANCHEZ                                                                   
+OSCAR LUNA                                                                      
+RODRIGO PINO                                                                    
+
+7 rows selected.
+
+
+NOMBRE                                             SUM(MONTO) MIN(MONTO)        
+-------------------------------------------------- ---------- ----------        
+MAX(MONTO) AVG(MONTO)                                                           
+---------- ----------                                                           
+Gimnasio                                                 2250        250        
+       600        375                                                           
+                                                                                
+Bar La Tasca                                             3850        300        
+      2300 641.666667                                                           
+                                                                                
+Restaurant Girasol                                      11310        300        
+      2580 807.857143                                                           
+                                                                                
+
+NOMBRE                                             SUM(MONTO) MIN(MONTO)        
+-------------------------------------------------- ---------- ----------        
+MAX(MONTO) AVG(MONTO)                                                           
+---------- ----------                                                           
+Tenis                                                     300        300        
+       300        300                                                           
+                                                                                
+
+
+NUM_FACTUR      MONTO                                                           
+---------- ----------                                                           
+F017             2580                                                           
+
+Enter value for montominimo: 600
+old   4:  HAVING SUM(MONTO)>&MONTOMINIMO
+new   4:  HAVING SUM(MONTO)>600
+
+CEDULA     CODI SUM(MONTO)                                                      
+---------- ---- ----------                                                      
+V666666    R017       3480                                                      
+V111111    R011       3430                                                      
+V999999    R012       1730                                                      
+V222222    R013        880                                                      
+V444444    R015        880                                                      
+V777777    R018       3930                                                      
+V111111    R019       2180                                                      
+
+7 rows selected.
+
+
+NUME                                                                            
+----                                                                            
+A001                                                                            
+A002                                                                            
+A003                                                                            
+A004                                                                            
+A005                                                                            
+A006                                                                            
+A007                                                                            
+B001                                                                            
+B002                                                                            
+B003                                                                            
+B004                                                                            
+
+NUME                                                                            
+----                                                                            
+B005                                                                            
+B006                                                                            
+B007                                                                            
+
+14 rows selected.
+
+
+NUME                                                                            
+----                                                                            
+A001                                                                            
+
+
+View dropped.
+
+
+View created.
+
+
+NUME                                                                            
+----                                                                            
+A001                                                                            
+
+
+ID_S                                                                            
+----                                                                            
+S001                                                                            
+
+
+View dropped.
+
+
+View created.
+
+
+ID_S                                                                            
+----                                                                            
+S001                                                                            
+
+
+NUME CODI ID_S TIP      MONTO FECHA_HOR NUM_FACTUR                              
+---- ---- ---- --- ---------- --------- ----------                              
+A001 R011 S001 C          580 25-JAN-11 F001                                    
+A002 R012 S001 C          580 03-JAN-11 F005                                    
+A002 R012 S001 T          300 04-JAN-11 F006                                    
+A003 R013 S001 E          580 04-JAN-11 F009                                    
+A003 R013 S001 E          300 04-JAN-11 F010                                    
+A001 R015 S001 T          580 10-JAN-11 F013                                    
+A001 R015 S001 C          300 11-JAN-11 F014                                    
+A001 R017 S001 C         2580 17-JAN-11 F017                                    
+A001 R017 S001 E          300 17-JAN-11 F018                                    
+A002 R018 S001 C          580 19-JAN-11 F021                                    
+A002 R018 S001 T         2450 19-JAN-11 F022                                    
+
+NUME CODI ID_S TIP      MONTO FECHA_HOR NUM_FACTUR                              
+---- ---- ---- --- ---------- --------- ----------                              
+A003 R019 S001 E          580 18-JAN-11 F025                                    
+A003 R019 S001 E          300 18-JAN-11 F026                                    
+A003 R019 S001           1300 19-JAN-11 F027                                    
+
+14 rows selected.
+
+
+View dropped.
+
+
+View created.
+
+
+NUME CODI ID_S TIP      MONTO FECHA_HOR NUM_FACTUR                              
+---- ---- ---- --- ---------- --------- ----------                              
+A001 R011 S001 C          580 25-JAN-11 F001                                    
+A002 R012 S001 C          580 03-JAN-11 F005                                    
+A002 R012 S001 T          300 04-JAN-11 F006                                    
+A003 R013 S001 E          580 04-JAN-11 F009                                    
+A003 R013 S001 E          300 04-JAN-11 F010                                    
+A001 R015 S001 T          580 10-JAN-11 F013                                    
+A001 R015 S001 C          300 11-JAN-11 F014                                    
+A001 R017 S001 C         2580 17-JAN-11 F017                                    
+A001 R017 S001 E          300 17-JAN-11 F018                                    
+A002 R018 S001 C          580 19-JAN-11 F021                                    
+A002 R018 S001 T         2450 19-JAN-11 F022                                    
+
+NUME CODI ID_S TIP      MONTO FECHA_HOR NUM_FACTUR                              
+---- ---- ---- --- ---------- --------- ----------                              
+A003 R019 S001 E          580 18-JAN-11 F025                                    
+A003 R019 S001 E          300 18-JAN-11 F026                                    
+A003 R019 S001           1300 19-JAN-11 F027                                    
+
+14 rows selected.
+
+
+CODI FECHA_ING FECHA_EGR CEDULA                                                 
+---- --------- --------- ----------                                             
+NOMBRE                                             NUM_PERSONAS COD             
+-------------------------------------------------- ------------ ----            
+R011 25-FEB-11 28-FEB-11 V111111                                                
+PEDRO PEREZ                                                   3 R011            
+                                                                                
+
+
+View dropped.
+
+
+View created.
+
+
+CODI FECHA_ING FECHA_EGR CEDULA                                                 
+---- --------- --------- ----------                                             
+NOMBRE                                             NUM_PERSONAS COD             
+-------------------------------------------------- ------------ ----            
+R011 25-FEB-11 28-FEB-11 V111111                                                
+PEDRO PEREZ                                                   3 R011            
+                                                                                
+

@@ -1,0 +1,273 @@
+\documentclass{article}
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+\pagestyle{plain}
+\begin{document}
+\begin{figure}[h] 
+ %\includegraphics {C:\Users\Omar\Proyect\usb.jpg}\
+
+
+
+Depto. de Computaci'on y Tecnologia de la Informaci'on\
+
+CI3391 Laboratorio de Bases de Datos I\\\\\\\\\\\\\\\\\\\\
+
+\title{\bf{MODELACION DE UNA BASE DE DATOS PARA LA RED SOCIAL "Soy USB"}}
+
+  \maketitle
+  
+  
+  
+        
+  
+  
+  
+ 
+
+\end{figure}
+
+  
+
+
+
+  
+\begin{bf} Nombre del Profesor :\end{bf}	\hspace{3cm}                    \begin{bf}  Nombre de los Alumnos: \end{bf}\\
+     Ricardo Monascal      \hspace{5cm}                   El Assad, Omar Al\'i\ 07-40855\\  
+                                                                                \begin{flushright} De Abreu Molina, Julio 05-38072  \end{flushright}
+       
+   
+
+  
+  \newpage
+  \tableofcontents
+  
+  \index{Introducci'on}
+  
+  \newpage
+  
+  \section{INTRODUCCI\'ON}
+  
+ 
+  
+       Uno de los principales problemas que acontece cuando tenemos un vocabulario, o en su defecto, un diccionario, es cuando necesitamos buscar una palabra, la mayoria de las veces lo hacemos a trav'es de prefijos. Ejemplo: cuando queremos buscar en el diccionario la palabra armamentismo, basta con tomar el prefijo ''arma", lo cual nos ahorra la b'usqueda que estamos realizando, porque a partir de ese prefijo, vamos a chequear si la palabra est\'a o no dentro de nuestro vocabulario.\\
+       Este problema es atacado por nuestro Consultor Ortografico. El mismo contiene un conjunto de palabras a las cuales llamaremos Vocabulario, y a trav\'es de sus diferentes implementaciones (Tries o Arreglos), lograremos resolver algunos problemas, de los cuales se pueden destacar los siguientes: El primero,dado un prefijo, co nsultar todas aquellas palabras que comiencen por dicho prefijo, o que dado un prefijo, te genere el prefijo mas largo.\\
+        En el resto del informe lo que podremos ver es lo que correspode al dise'no de ambas variantes, en esta secci\'on podremos encontrar la especificaci\'on de ambas implementaciones. Luego, en la siguiente secci\'on, vamos a tener lo que corresponden a los detalles de la implementaci\'on, donde vamos a ver peculiaridades con el lenguaje Java. En la siguiente secci\'on haremos un an\'alisis del estado actual de nuestro proyecto, donde veremos si existen anomal\'ias, y cu\'ales son. Finalmente tendremos las conclusiones y las Fuentes Bibliogr\'aficas.   
+
+
+
+\newpage
+\section{DISENO}
+
+    El siguiente codigo es la especificaci\'on del ConsultOrt (Interfaz del Consultor):
+
+public interface ConsultOrt \\
+{\\
+    
+     public normal behavior \\
+            requires \\
+                bf(p) y vocabulario.has(new JMLString(p));\\
+            ensures \\
+                vocabulario.equals\\
+                (\\
+                    old(vocabulario).union\\
+                    (\\
+                         new JMLValueSet(new JMLString(p))\\
+                    )\\
+                );\\
+            assignable\\ 
+                vocabulario;\\		
+       also public exceptional behavior\\
+            requires \\
+                !bf(p) || vocabulario.has(new JMLString(p));\\	
+            signals only \\
+                ExcepcionPalabraNoBienFormada,\\
+		ExcepcionPalabraYaRegistrada;\\
+	    signals \\
+               (ExcepcionPalabraNoBienFormada) !bf(p);\\	
+	    signals \\
+                (ExcepcionPalabraYaRegistrada)\\ 
+		    vocabulario.has(new JMLString(p));\\
+	    assignable \\
+                nothing;	\\		 
+      */			\\
+    public void agregar(String p) throws\\
+        ExcepcionPalabraNoBienFormada,\\	 
+	ExcepcionPalabraYaRegistrada;\\
+		
+		
+     public normal behavior\\
+            requires \\
+                bf(pr);\\
+            ensures \\
+                vocabulario.equals(old(vocabulario))\\
+	         y\\
+		(forall int i, j ; 0 <= i  < result.length
+                                     y
+				    0 <= j < result.length
+				     y
+				    i != j
+			          ; !result[i].equals(result[j])	 
+		)\\
+		 y
+		(forall int i ; 0 <= i < result.length
+                               ; vocabulario.has
+                                 (
+                                      new JMLString(result[i])
+                                 )	 
+		)\\
+		 y
+		(forall int i ; 0 <= i < result.length
+                               ; ipf(pr, result[i])	 
+		);\\					
+	    assignable\\         
+                nothing;	\\	
+       also public exceptional behavior\\
+            requires 
+                !bf(pr);\\
+            signals only\\ 
+                ExcepcionPalabraNoBienFormada;\\
+            signals \\
+                (ExcepcionPalabraNoBienFormada) !bf(pr);\\
+	    assignable \\
+                nothing;\\
+      */			\\
+    public String[] consultarPorPrefijo(String pr) throws \\   
+        ExcepcionPalabraNoBienFormada;\\
+
+
+     public normal behavior\\
+            requires 
+                bf(pl);\\
+            ensures 
+                vocabulario.equals(old(vocabulario))
+	         y
+                ipf(result, pl)
+		 y
+		(forall String s ; vocabulario.has(new JMLString(s)) 
+                                  ; ipf(s, pl) ==> ipf(s, result)
+		);\\			
+	    assignable 
+                nothing;\\		
+        also public exceptional behavior\\
+            requires 
+                !bf(pl);\\
+            signals  only\\ 
+                ExcepcionPalabraNoBienFormada;\\
+            signals \\
+                (ExcepcionPalabraNoBienFormada) !bf(pl);\\
+	    assignable \\
+                nothing;\\
+      */		\\
+    public String prefijoMasLargo(String pl) throws \\
+        ExcepcionPalabraNoBienFormada;\\
+
+	
+    /* requires 
+            true;\\
+       ensures 
+            result <==> (p != "" 
+	                  y
+			 (forall int i ; 0 <= i < p.length() 
+			                ; 0 <= p.charAt(i) - 'a' 
+			 		   y
+					  p.charAt(i) - 'a' <= 25 
+		         ));	
+      */		\\		
+    public /*@ pure @*/ boolean  bf(String p);\\
+	
+
+    /* requires 
+            bf(p) y bf(q);\\
+       ensures 
+            result <==> p.length() <= q.length() 
+	                  y
+			 (forall int i ; 0 <= i < p.length() 
+			         	; p.charAt(i) - q.charAt(i) 
+                                           == 
+                                          0
+		         );
+      */			\\			   
+	public /*@ pure @*/ boolean  ipf(String p, String q);\\
+
+    public void leerArchivo (String s) throws NoTextFoundException;\\
+	
+    public void listar(ConsultOrt a);\\
+
+    public Iterator iterator();\\
+
+    Lo que sigue es la especificacion del tad Cola, la cual la usamos para Consultar por prefijos en la Variante Trie:
+
+import org.jmlspecs.models.JMLValueSequence;
+public interface ColaInterface {
+
+
+
+  assignable nothing;
+  
+public void encolar (String a);
+
+public int tamano();
+
+public String[] formQeueToArray();\\
+
+}
+
+    El TAD Cola lo estamos usando ya que para consultar por prefijo, llamamos recursivamente a una funci\'on la cual llamamos toQeue, la cual toma las palabras que comienzan por un prefijo dado, y los mete en una cola, esto es para luego llevarlos a un arreglo. Cabe destacar que para el TAD Cola, usamos el tipo concreto Lista, esto es para evitar el tamano limitado de los arreglos.
+
+
+
+\newpage    
+\section{DETALLES DE IMPLEMENTACION}
+
+    Realmente no hay peculariedades que resaltar del lenguaje Java, salvo algunos detalles como lo son los Warnings que arroja JML, esto se debe a que hay especificaciones informales que JML obviamente no reconoce. Adicionalmente, dada la costumbre de que en Java teniamos m\'etodos, gracias a los cuales, dentro de un tad acostumbramos a poner this.<Nombre del Procedimiento>. En ConsultOrtTriesArreglos, hemos podido encontrar algunos procedimientos, en los cuales se les pasa como par\'ametro una variable del tipo abstracto que estamos implementando. Esto lo que hace es que a la hora de llamarlos, ya no podemos llamarlos como llamamos a los procedimientos  tradicionalmente, sino que se le pasa el par\'ametro del tipo.\\
+
+
+
+\section{ESTADO ACTUAL}
+
+	Luego de hacer todas las verificaciones posibles, podemos decir que nuestro Consultor funciona perfectamente , esto significa que no presenta ninguna anoma\'ias en ninguna de las dos variantes. Se comprob\'o cada una de las operaciones, tanto para tries como para arreglos, y funcionan con total normalidad.
+
+Ahora veamos como funciona nuestro Consultor.\\
+
+MANUAL DE USO DE CONSULTOR ORTOGRAFICO \\
+
+    En primer lugar, se debe contar con los siguientes archivos en una carpeta: Console.java, ConsultOrt.java, ConsultOrtArreglos.java, ConsultOrtTriesArreglos.java y Cliente.java. Luego, abrir una consola y situarse en la carpeta correspondiente.\\
+
+    Luego, a trav\'es del siguiente comando, se proceder\'a a compilar cada uno de los archivos: jmlc *.java. Con esto, se van a generar los archivos .class, sin los cuales no se podr\'a ejecutar el programa principal.\\
+
+    El paso siguiente es poner en la Consola el comando jmlrac Cliente. Esto nos llevar\'a al men\'u de opciones. La primera opcion nos ofrece crear un consultor a traves de dos variantes: TRIES O ARREGLOS. Este es el paso mas importante, ya que al principio el Consultor no se encuentra inicializado, y si ejecutamos cualquiera de las otras opciones, nos va arrojar una excepci\'on de java muy conocida: NULL POINTER EXCEPTION.\\
+
+    Las otras opciones que tenemos en el menu disponibles son las siguientes: Agregar manualmente las palabras al vocabulario, en esta opci\'on, le damos la opci\'on de poner la cantidad de palabras a ingresar al vocabulario del consultor, y luego por teclado tiene que ir poniendo cada una de las palabras. Cabe destacar que si coloca palabras que contengan caracteres especiales, algunas o todas las letras en may\'uscula, o le das a espacio y enter dando a entender al consultor que vas a insertar una palabra vacia, va a arrojar una excepci\'on, porque nuestro consultor s\'olo admite palabras en min\'usculas, no vac\'ias y sin caracteres especiales.
+    Adicionalmente, si insertas una palabra que ya estaba agregada, tambi\'en arroja una excepci\'on, ya que nuestro consultor no admite palabras repetidas.\\
+
+    La siguiente opci\'on es Consultar por Prefijo. En esta opci\'on le debes pasar una palabra, nuevamente en min\'uscula, noac\'ia y sin caracteres especiales, y nuestro consultor proceder\'a a buscar todas aquellas palabras que comiencen por la palabra ingresada. En caso exitoso, lo que ocurrir\'a es que se imprimir\'an en pantalla todas las palabras encontradas. En caso contrario, le diremos que no hay coincidencias.\\
+
+    Nuestra pr\'oxima opci\'on es Prefijo m\'as Largo. Aqu\'i debe ingresar una palabra en min\'usculas, no vac\'ia y sin caracteres, y nuestro consultor proceder\'a a chequear si hay alguna palabra que comienza por dicha palabra. En caso exitoso, se proceder\'a  a imprimir en pantalla la palabra ingresada. En caso contrario, se corta la palabra una letra de derecha a izquierda, para realizar el mismo procedimiento antes descrito. Esto lo va a hacer hasta que llegue al principio de la palabra.\\
+
+    La siguiente opci\'on es Cargar un archivo. Aqui le pediremos que ingrese la direcci\'on COMPLETA de la ubicaci\'on del archivo a cargar. Si el archivo  no existe, o la direcci\'on es incorrecta, el programa arroja una excepci\'on ya que el archivo no fue encontrado o no existe.\\
+
+    La pr\'oxima opci\'on es listar  el vocabulario que tenemos hasta ahora. Si le das a esta opci\'on, se imprimiran todas las palabras en pantalla.
+
+    La \'ultima opci\'on es Salir del Programa.
+
+     
+\newpage
+
+\section{CONCLUSIONES}
+
+    A lo largo del proyecto hemos podido aprender acerca del lenguaje JAVA y algunos de  sus comandos. Hemos podido aprender sobre el uso de clases, el manejo de excepciones en JAVA, a decir verdad fue interesante trabajar paralelamente con arreglos y arboles Tries, la complejidad que tiene recorrer arboles con nodos de arreglos de 26 posiciones, la funcionabilidad de recorrer el arbol ordenadamente y as\'i obtener las palabras listadas en orden lexicogr\'afico, no se puede obviar el hecho de trabajar bajo JML que presenta una dificultad extra al agregar al lenguaje la posibilidad de crear \begin{bf}{invariantes}\end{bf} y \begin{bf}{funciones de cota}\end{bf} que permiten la verificacion de los codigos y lo que modifican, aparte de verificar la terminaci\'on de ciclos.\\
+   
+
+     A lo largo del proyecto nos hemos encontrado varias dificultades, ya que el manejo de referencias en JAVA requiri\'o investigaci\'on para su buena implementaci\'on. Para la implementaci\'on con Tries, los iteradores sobre el \'arbol tambien formaron parte de las dificultades.\\
+	
+        
+\newpage
+
+\begin{thebibliography}{3} \end{thebibliography}
+         		
+LISKOV, Barbara: "Program Development in Java - Abstraction, Specification, and Object-Oriented Design", Addison-Wesley, 2001.
+
+API JAVA 1.4  http://java.sun.com/j2se/1.4.2/docs/api/
+  
+  
+\end{document}

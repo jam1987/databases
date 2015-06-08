@@ -1,0 +1,1918 @@
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.1.15)  16 FEB 2011 23:55
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**InformeFase1.tex
+(./InformeFase1.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/size10.clo
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texmf-texlive/tex/generic/babel/babel.sty
+Package: babel 2008/07/06 v3.8l The Babel package
+
+(/usr/share/texmf-texlive/tex/generic/babel/spanish.ldf
+Language: spanish.ldf 2009/01/02 v5.0h Spanish support from the babel system
+
+(/usr/share/texmf-texlive/tex/generic/babel/babel.def
+File: babel.def 2008/07/06 v3.8l Babel common definitions
+\babel@savecnt=\count87
+\U@D=\dimen103
+)
+
+Package babel Warning: No hyphenation patterns were loaded for
+(babel)                the language `Spanish'
+(babel)                I will use the patterns loaded for \language=0 instead.
+
+\l@spanish = a dialect from \language0
+\es@datefmt=\count88
+\es@quottoks=\toks14
+\es@quotdepth=\count89
+Package babel Info: Making " an active character on input line 492.
+Package babel Info: Making . an active character on input line 585.
+Package babel Info: Making < an active character on input line 630.
+Package babel Info: Making > an active character on input line 630.
+)) (/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+(/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/etc/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/share/texmf-texlive/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2010/03/12 v0.04p Graphics/color for pdfTeX
+\Gread@gobject=\count90
+))
+\Gin@req@height=\dimen104
+\Gin@req@width=\dimen105
+)
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texmf-texlive/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks16
+\ex@=\dimen106
+))
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen107
+)
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count91
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count92
+\leftroot@=\count93
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count94
+\DOTSCASE@=\count95
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen108
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count96
+\c@MaxMatrixCols=\count97
+\dotsspace@=\muskip10
+\c@parentequation=\count98
+\dspbrk@lvl=\count99
+\tag@help=\toks17
+\row@=\count100
+\column@=\count101
+\maxfields@=\count102
+\andhelp@=\toks18
+\eqnshift@=\dimen109
+\alignsep@=\dimen110
+\tagshift@=\dimen111
+\tagwidth@=\dimen112
+\totwidth@=\dimen113
+\lineht@=\dimen114
+\@envbody=\toks19
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks20
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+) (./InformeFase1.aux)
+\openout1 = `InformeFase1.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+
+(/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count103
+\scratchdimen=\dimen115
+\scratchbox=\box28
+\nofMPsegments=\count104
+\nofMParguments=\count105
+\everyMPshowfont=\toks21
+\MPscratchCnt=\count106
+\MPscratchDim=\dimen116
+\MPnumerator=\count107
+\everyMPtoPDFconversion=\toks22
+) </home/julio/usb.jpg, id=1, 90.3375pt x 60.225pt>
+File: /home/julio/usb.jpg Graphic file (type jpg)
+ <use /home/julio/usb.jpg>
+Underfull \hbox (badness 10000) in paragraph at lines 12--13
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--13
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--13
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--13
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--13
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--13
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--13
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--13
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--13
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--13
+
+ []
+
+
+LaTeX Warning: No \author given.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 \end{figure}\\\\
+                     
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 
+     
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21 \newline
+             
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.22 \newline
+             
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 \newline
+             
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.24 \newline
+             
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 \newline
+             
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26 \newline
+             
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27 \newline
+             
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 \newline
+             
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.29 \newline
+             
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 \newline
+             
+? 
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} </home/julio/usb.jpg>]
+(./InformeFase1.toc
+Overfull \hbox (10.10431pt too wide) in paragraph at lines 9--9
+ [] []\OT1/cmr/bx/n/10 RESTRICCIONES EX-PL[]ICITAS PROVE-NIENTES DEL MOD- 
+ []
+
+)
+\tf@toc=\write3
+\openout3 = `InformeFase1.toc'.
+
+ [2]
+Underfull \hbox (badness 10000) in paragraph at lines 41--44
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.45 \newline
+             
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--52
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.53 \newline
+             
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--57
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.58 \newline
+             
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--60
+
+ []
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 64--68
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--68
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--72
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--72
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--78
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--78
+
+ []
+
+[4] [5]
+Underfull \hbox (badness 10000) in paragraph at lines 83--84
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.86 \newline
+             
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 87--90
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 87--90
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 91--92
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.93 \newline
+             
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.108 
+      
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--111
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.112 \newline
+              
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 113--115
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 119--120
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.121 
+      
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.122 \newline
+              
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--127
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--127
+
+ []
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 135--136
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.138 \newline
+              
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.138 \newline
+              
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 139--144
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 139--144
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.151 \newline
+              
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--154
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.155 \newline
+              
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 156--158
+
+ []
+
+! Undefined control sequence.
+l.160 \item  Antig\Â
+                    ¨uedad
+? 
+Missing character: There is no ¨ in font cmr10!
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.165 \newline
+              
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.165 \newline
+              
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 167--172
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 167--172
+
+ []
+
+[7]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.179 \newline
+              
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.179 \newline
+              
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 182--187
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 182--187
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.194 \newline
+              
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.194 \newline
+              
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--198
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 205--206
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.207 \newline
+              
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.207 \newline
+              
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 208--212
+
+ []
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 213--214
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.215 \newline
+              
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.215 \newline
+              
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 220--221
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.222 \newline
+              
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.222 \newline
+              
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 223--226
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.230 \newline
+              
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.230 \newline
+              
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 231--235
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.239 \newline
+              
+? 
+[9] [10]
+
+! LaTeX Error: \begin{document} ended by \end{enumerate}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.247 \end{enumerate}
+                     
+? 
+! Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.247 \end{enumerate}
+                     
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 256--257
+
+ []
+
+
+Overfull \hbox (7.9507pt too wide) in paragraph at lines 258--259
+[]\OT1/cmr/m/n/10 MIEMBRO($[]$,Nombre, Apel-li-do, FechaNac, Sexo, Ocu-paci^^So
+n, Ubi-caci^^Son,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 258--259
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 260--261
+
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.262 ... {\overline{\overline{\underline{IDM}}} }
+                                                  ,\underline{N\'umero de Te...
+
+? 
+! Extra }, or forgotten $.
+\overset ... {\mathop {\kern \z@ #2}\limits ^{#1}}
+                                                  
+l.262 ... {\overline{\overline{\underline{IDM}}} }
+                                                  ,\underline{N\'umero de Te...
+
+? 
+
+LaTeX Warning: Command \' invalid in math mode on input line 262.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ...@spacefactor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.262 ...M}}} },\underline{N\'umero de Tel\'efono}
+                                                  )\\
+? 
+! You can't use `\spacefactor' in math mode.
+\add@accent ...}\accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.262 ...M}}} },\underline{N\'umero de Tel\'efono}
+                                                  )\\
+? 
+! You can't use `\spacefactor' in math mode.
+<argument> ...cefactor \spacefactor }\spacefactor 
+                                                  \accent@spacefactor 
+l.262 ...M}}} },\underline{N\'umero de Tel\'efono}
+                                                  )\\
+? 
+
+LaTeX Warning: Command \' invalid in math mode on input line 262.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ...@spacefactor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.262 ...M}}} },\underline{N\'umero de Tel\'efono}
+                                                  )\\
+? 
+! You can't use `\spacefactor' in math mode.
+\add@accent ...}\accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.262 ...M}}} },\underline{N\'umero de Tel\'efono}
+                                                  )\\
+? 
+! You can't use `\spacefactor' in math mode.
+<argument> ...cefactor \spacefactor }\spacefactor 
+                                                  \accent@spacefactor 
+l.262 ...M}}} },\underline{N\'umero de Tel\'efono}
+                                                  )\\
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.263 
+      
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.263 
+      
+? 
+Missing character: There is no è in font cmex10!
+Missing character: There is no è in font cmex10!
+Missing character: There is no è in font cmex10!
+Missing character: There is no è in font cmex10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 264--265
+
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.266 ...{\overline{\overline{\underline{IDMA}}} }
+                                                  ,{\underline{Carnet , Carr...
+
+? 
+! Extra }, or forgotten $.
+\overset ... {\mathop {\kern \z@ #2}\limits ^{#1}}
+                                                  
+l.266 ...{\overline{\overline{\underline{IDMA}}} }
+                                                  ,{\underline{Carnet , Carr...
+
+? 
+
+LaTeX Warning: Command \' invalid in math mode on input line 266.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ...@spacefactor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.266 ...\underline{Carnet , Carrera o Menci\'on }
+                                                  },Tipo ,Cohorte)\\
+? 
+! You can't use `\spacefactor' in math mode.
+\add@accent ...}\accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.266 ...\underline{Carnet , Carrera o Menci\'on }
+                                                  },Tipo ,Cohorte)\\
+? 
+! You can't use `\spacefactor' in math mode.
+<argument> ...cefactor \spacefactor }\spacefactor 
+                                                  \accent@spacefactor 
+l.266 ...\underline{Carnet , Carrera o Menci\'on }
+                                                  },Tipo ,Cohorte)\\
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.267 
+      
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.267 
+      
+? 
+Missing character: There is no è in font cmex10!
+Missing character: There is no è in font cmex10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 268--269
+
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.270 ...{\overline{\overline{\underline{IDMA}}} }
+                                                  ,{\underline{Carnet}}, Dep...
+
+? 
+! Extra }, or forgotten $.
+\overset ... {\mathop {\kern \z@ #2}\limits ^{#1}}
+                                                  
+l.270 ...{\overline{\overline{\underline{IDMA}}} }
+                                                  ,{\underline{Carnet}}, Dep...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.271 
+      
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.271 
+      
+? 
+
+Overfull \hbox (45.47122pt too wide) in paragraph at lines 270--271
+[]\OT1/cmr/m/n/10 PROFESOR($[]\OML/cmm/m/it/10 ; []; DepartamentoAsociado; Fech
+adeIngreso; Cargo\OT1/cmr/m/n/10 )[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 272--273
+
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.274 ...{\overline{\overline{\underline{IDMA}}} }
+                                                  ,{\underline{Carnet}}, Ant...
+
+? 
+! Extra }, or forgotten $.
+\overset ... {\mathop {\kern \z@ #2}\limits ^{#1}}
+                                                  
+l.274 ...{\overline{\overline{\underline{IDMA}}} }
+                                                  ,{\underline{Carnet}}, Ant...
+
+? 
+
+LaTeX Warning: Command \' invalid in math mode on input line 274.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ...@spacefactor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.274 ...ad, Cargo, Fecha de Ingreso, Instituci\'o
+                                                  n Asociada)\\
+? 
+! You can't use `\spacefactor' in math mode.
+\add@accent ...}\accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.274 ...ad, Cargo, Fecha de Ingreso, Instituci\'o
+                                                  n Asociada)\\
+? 
+! You can't use `\spacefactor' in math mode.
+<argument> ...cefactor \spacefactor }\spacefactor 
+                                                  \accent@spacefactor 
+l.274 ...ad, Cargo, Fecha de Ingreso, Instituci\'o
+                                                  n Asociada)\\
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.275 
+      
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.275 
+      
+? 
+Missing character: There is no è in font cmex10!
+Missing character: There is no è in font cmex10!
+
+Overfull \hbox (90.94418pt too wide) in paragraph at lines 274--275
+[]\OT1/cmr/m/n/10 EMPLEADO($[]\OML/cmm/m/it/10 ; []; Antiguedad; Cargo; Fechade
+Ingreso; Instituci[]nAsociada\OT1/cmr/m/n/10 )[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 276--277
+
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.278 ...{\overline{\overline{\underline{IDMA}}} }
+                                                  ,{\underline{Carnet, Carre...
+
+? 
+! Extra }, or forgotten $.
+\overset ... {\mathop {\kern \z@ #2}\limits ^{#1}}
+                                                  
+l.278 ...{\overline{\overline{\underline{IDMA}}} }
+                                                  ,{\underline{Carnet, Carre...
+
+? 
+
+LaTeX Warning: Command \' invalid in math mode on input line 278.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ...@spacefactor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.278 ...,{\underline{Carnet, Carrera o Menci\'on}
+                                                  }, Tipo, Cohorte)\\
+? 
+! You can't use `\spacefactor' in math mode.
+\add@accent ...}\accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.278 ...,{\underline{Carnet, Carrera o Menci\'on}
+                                                  }, Tipo, Cohorte)\\
+? 
+! You can't use `\spacefactor' in math mode.
+<argument> ...cefactor \spacefactor }\spacefactor 
+                                                  \accent@spacefactor 
+l.278 ...,{\underline{Carnet, Carrera o Menci\'on}
+                                                  }, Tipo, Cohorte)\\
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.279 
+      
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.279 
+      
+? 
+Missing character: There is no è in font cmex10!
+Missing character: There is no è in font cmex10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 280--281
+
+ []
+
+! Extra }, or forgotten \endgroup.
+l.282 EVENTO( \underline{IDE}}
+                              ,\overset{MIEMBRO} {\overline{\overline{\under...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.282 ...{\overline{\underline{IDMOrganizador}}} }
+                                                   \quad, Descripci\'on, Dur...
+
+? 
+! Extra }, or forgotten $.
+\overset ... {\mathop {\kern \z@ #2}\limits ^{#1}}
+                                                  
+l.282 ...{\overline{\underline{IDMOrganizador}}} }
+                                                   \quad, Descripci\'on, Dur...
+
+? 
+
+LaTeX Warning: Command \' invalid in math mode on input line 282.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ...@spacefactor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.282 ...e{IDMOrganizador}}} } \quad, Descripci\'o
+                                                  n, Duraci\'on, Lugar, Hora...
+
+? 
+! You can't use `\spacefactor' in math mode.
+\add@accent ...}\accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.282 ...e{IDMOrganizador}}} } \quad, Descripci\'o
+                                                  n, Duraci\'on, Lugar, Hora...
+
+? 
+! You can't use `\spacefactor' in math mode.
+<argument> ...cefactor \spacefactor }\spacefactor 
+                                                  \accent@spacefactor 
+l.282 ...e{IDMOrganizador}}} } \quad, Descripci\'o
+                                                  n, Duraci\'on, Lugar, Hora...
+
+? 
+
+LaTeX Warning: Command \' invalid in math mode on input line 282.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ...@spacefactor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.282 ...ador}}} } \quad, Descripci\'on, Duraci\'o
+                                                  n, Lugar, Hora y Fecha, No...
+
+? 
+! You can't use `\spacefactor' in math mode.
+\add@accent ...}\accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.282 ...ador}}} } \quad, Descripci\'on, Duraci\'o
+                                                  n, Lugar, Hora y Fecha, No...
+
+? 
+! You can't use `\spacefactor' in math mode.
+<argument> ...cefactor \spacefactor }\spacefactor 
+                                                  \accent@spacefactor 
+l.282 ...ador}}} } \quad, Descripci\'on, Duraci\'o
+                                                  n, Lugar, Hora y Fecha, No...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.283 
+      
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.283 
+      
+? 
+Missing character: There is no è in font cmex10!
+Missing character: There is no è in font cmex10!
+Missing character: There is no è in font cmex10!
+Missing character: There is no è in font cmex10!
+
+Overfull \hbox (86.89333pt too wide) in paragraph at lines 282--283
+[]\OT1/cmr/m/n/10 EVENTO( $[]$,$[] \OML/cmm/m/it/10 ; Descripci[]n; Duraci[]n; 
+Lugar; HorayFecha; Nombre\OT1/cmr/m/n/10 )[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 285--286
+
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.287 ...line{\overline{\underline{IDMCreador}}} }
+                                                   \quad,{\underline{IDG}}, ...
+
+? 
+! Extra }, or forgotten $.
+\overset ... {\mathop {\kern \z@ #2}\limits ^{#1}}
+                                                  
+l.287 ...line{\overline{\underline{IDMCreador}}} }
+                                                   \quad,{\underline{IDG}}, ...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.288 
+      
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.288 
+      
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 289--290
+
+ []
+
+[11]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.291 ...{\overline{\underline{IDMSolicitante}}} }
+                                                   \quad,\overset{MIEMBRO} {...
+
+? 
+! Extra }, or forgotten $.
+\overset ... {\mathop {\kern \z@ #2}\limits ^{#1}}
+                                                  
+l.291 ...{\overline{\underline{IDMSolicitante}}} }
+                                                   \quad,\overset{MIEMBRO} {...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.292 
+      
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.292 
+      
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 293--294
+
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.295 ...{\overline{\underline{IDMSolicitante}}} }
+                                                   \quad,\overset{MIEMBRO} {...
+
+? 
+! Extra }, or forgotten $.
+\overset ... {\mathop {\kern \z@ #2}\limits ^{#1}}
+                                                  
+l.295 ...{\overline{\underline{IDMSolicitante}}} }
+                                                   \quad,\overset{MIEMBRO} {...
+
+? 
+! Extra }, or forgotten $.
+l.295 ...erline{IDMSolicitado}}} } \quad, Status }
+                                                   \quad,Tipo)\\
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.296 
+      
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.296 
+      
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 298--299
+
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.301 ... {\overline{\overline{\underline{IDM}}} }
+                                                   \quad,\overset{GRUPO} {\o...
+
+? 
+! Extra }, or forgotten $.
+\overset ... {\mathop {\kern \z@ #2}\limits ^{#1}}
+                                                  
+l.301 ... {\overline{\overline{\underline{IDM}}} }
+                                                   \quad,\overset{GRUPO} {\o...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.302 
+      
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.302 
+      
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 303--304
+
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.305 ... {\overline{\overline{\underline{IDM}}} }
+                                                   \quad,\overset{EVENTO} {\...
+
+? 
+! Extra }, or forgotten $.
+\overset ... {\mathop {\kern \z@ #2}\limits ^{#1}}
+                                                  
+l.305 ... {\overline{\overline{\underline{IDM}}} }
+                                                   \quad,\overset{EVENTO} {\...
+
+? 
+
+LaTeX Warning: Command \' invalid in math mode on input line 305.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ...@spacefactor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.305 ...rline{IDE}}} } \quad,intereses, asisti\'o
+                                                  )\\
+? 
+! You can't use `\spacefactor' in math mode.
+\add@accent ...}\accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.305 ...rline{IDE}}} } \quad,intereses, asisti\'o
+                                                  )\\
+? 
+! You can't use `\spacefactor' in math mode.
+<argument> ...cefactor \spacefactor }\spacefactor 
+                                                  \accent@spacefactor 
+l.305 ...rline{IDE}}} } \quad,intereses, asisti\'o
+                                                  )\\
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.306 
+      
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.306 
+      
+? 
+Missing character: There is no è in font cmex10!
+Missing character: There is no è in font cmex10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 308--309
+
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.310 ...erline{\overline{\underline{IDMDueno}}} }
+                                                   ,\overset{MIEMBRO} {\over...
+
+? 
+! Extra }, or forgotten $.
+\overset ... {\mathop {\kern \z@ #2}\limits ^{#1}}
+                                                  
+l.310 ...erline{\overline{\underline{IDMDueno}}} }
+                                                   ,\overset{MIEMBRO} {\over...
+
+? 
+
+LaTeX Warning: Command \' invalid in math mode on input line 311.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ...@spacefactor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.311 ...'on, SUbicaci\'on, SCorreo Electr\'onico}
+                                                  )\\
+? 
+! You can't use `\spacefactor' in math mode.
+\add@accent ...}\accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.311 ...'on, SUbicaci\'on, SCorreo Electr\'onico}
+                                                  )\\
+? 
+! You can't use `\spacefactor' in math mode.
+<argument> ...cefactor \spacefactor }\spacefactor 
+                                                  \accent@spacefactor 
+l.311 ...'on, SUbicaci\'on, SCorreo Electr\'onico}
+                                                  )\\
+? 
+
+LaTeX Warning: Command \' invalid in math mode on input line 311.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ...@spacefactor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.311 ...'on, SUbicaci\'on, SCorreo Electr\'onico}
+                                                  )\\
+? 
+! You can't use `\spacefactor' in math mode.
+\add@accent ...}\accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.311 ...'on, SUbicaci\'on, SCorreo Electr\'onico}
+                                                  )\\
+? 
+! You can't use `\spacefactor' in math mode.
+<argument> ...cefactor \spacefactor }\spacefactor 
+                                                  \accent@spacefactor 
+l.311 ...'on, SUbicaci\'on, SCorreo Electr\'onico}
+                                                  )\\
+? 
+
+LaTeX Warning: Command \' invalid in math mode on input line 311.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ...@spacefactor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.311 ...'on, SUbicaci\'on, SCorreo Electr\'onico}
+                                                  )\\
+? 
+! You can't use `\spacefactor' in math mode.
+\add@accent ...}\accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.311 ...'on, SUbicaci\'on, SCorreo Electr\'onico}
+                                                  )\\
+? 
+! You can't use `\spacefactor' in math mode.
+<argument> ...cefactor \spacefactor }\spacefactor 
+                                                  \accent@spacefactor 
+l.311 ...'on, SUbicaci\'on, SCorreo Electr\'onico}
+                                                  )\\
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.312 
+      
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.312 
+      
+? 
+Missing character: There is no è in font cmex10!
+Missing character: There is no è in font cmex10!
+Missing character: There is no è in font cmex10!
+Missing character: There is no è in font cmex10!
+Missing character: There is no è in font cmex10!
+Missing character: There is no è in font cmex10!
+
+Overfull \hbox (24.55539pt too wide) in paragraph at lines 310--312
+[]\OT1/cmr/m/n/10 PInterfaz($[]\OML/cmm/m/it/10 ; []; []; [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 313--314
+
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.315 ... {\overline{\overline{\underline{IDM}}} }
+                                                   \quad,\overset{GRUPO} {\o...
+
+? 
+! Extra }, or forgotten $.
+\overset ... {\mathop {\kern \z@ #2}\limits ^{#1}}
+                                                  
+l.315 ... {\overline{\overline{\underline{IDM}}} }
+                                                   \quad,\overset{GRUPO} {\o...
+
+? 
+
+LaTeX Warning: Command \' invalid in math mode on input line 316.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ...@spacefactor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.316 ...'on, SUbicaci\'on, SCorreo Electr\'onico}
+                                                  )\\
+? 
+! You can't use `\spacefactor' in math mode.
+\add@accent ...}\accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.316 ...'on, SUbicaci\'on, SCorreo Electr\'onico}
+                                                  )\\
+? 
+! You can't use `\spacefactor' in math mode.
+<argument> ...cefactor \spacefactor }\spacefactor 
+                                                  \accent@spacefactor 
+l.316 ...'on, SUbicaci\'on, SCorreo Electr\'onico}
+                                                  )\\
+? 
+
+LaTeX Warning: Command \' invalid in math mode on input line 316.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ...@spacefactor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.316 ...'on, SUbicaci\'on, SCorreo Electr\'onico}
+                                                  )\\
+? 
+! You can't use `\spacefactor' in math mode.
+\add@accent ...}\accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.316 ...'on, SUbicaci\'on, SCorreo Electr\'onico}
+                                                  )\\
+? 
+! You can't use `\spacefactor' in math mode.
+<argument> ...cefactor \spacefactor }\spacefactor 
+                                                  \accent@spacefactor 
+l.316 ...'on, SUbicaci\'on, SCorreo Electr\'onico}
+                                                  )\\
+? 
+
+LaTeX Warning: Command \' invalid in math mode on input line 316.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ...@spacefactor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.316 ...'on, SUbicaci\'on, SCorreo Electr\'onico}
+                                                  )\\
+? 
+! You can't use `\spacefactor' in math mode.
+\add@accent ...}\accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.316 ...'on, SUbicaci\'on, SCorreo Electr\'onico}
+                                                  )\\
+? 
+! You can't use `\spacefactor' in math mode.
+<argument> ...cefactor \spacefactor }\spacefactor 
+                                                  \accent@spacefactor 
+l.316 ...'on, SUbicaci\'on, SCorreo Electr\'onico}
+                                                  )\\
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.317 
+      
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.317 
+      
+? 
+Missing character: There is no è in font cmex10!
+Missing character: There is no è in font cmex10!
+Missing character: There is no è in font cmex10!
+Missing character: There is no è in font cmex10!
+Missing character: There is no è in font cmex10!
+Missing character: There is no è in font cmex10!
+
+Overfull \hbox (31.74161pt too wide) in paragraph at lines 315--317
+[]\OT1/cmr/m/n/10 PInterfazAG($[] \OML/cmm/m/it/10 ; [] ; []; [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 318--319
+
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.320 ... {\overline{\overline{\underline{IDM}}} }
+                                                   \quad, \overset{EVENTO} {...
+
+? 
+! Extra }, or forgotten $.
+\overset ... {\mathop {\kern \z@ #2}\limits ^{#1}}
+                                                  
+l.320 ... {\overline{\overline{\underline{IDM}}} }
+                                                   \quad, \overset{EVENTO} {...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.321 
+      
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.321 
+      
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 322--323
+
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.324 ... {\overline{\overline{\underline{IDG}}} }
+                                                   \quad,\overset{EVENTO} {\...
+
+? 
+! Extra }, or forgotten $.
+\overset ... {\mathop {\kern \z@ #2}\limits ^{#1}}
+                                                  
+l.324 ... {\overline{\overline{\underline{IDG}}} }
+                                                   \quad,\overset{EVENTO} {\...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.325 
+      
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.325 
+      
+? 
+[12]
+Overfull \hbox (54.76285pt too wide) in paragraph at lines 331--331
+[]\OT1/cmr/bx/n/14.4 RESTRICCIONES EX-PL[]ICITAS PROVE-NIENTES
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 334--339
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 334--339
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 334--339
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 334--339
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 339--344
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 339--344
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 339--344
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 339--344
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 344--349
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 344--349
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 344--349
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 344--349
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 349--354
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 349--354
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 349--354
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 349--354
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 354--359
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 354--359
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 354--359
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 354--359
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 359--364
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 359--364
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 359--364
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 359--364
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 364--369
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 364--369
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 364--369
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 364--369
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 369--374
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 369--374
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 369--374
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 369--374
+
+ []
+
+[13]
+! Undefined control sequence.
+l.376 \mewline
+              
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 374--379
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 374--379
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 374--379
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 379--384
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 379--384
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 379--384
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 379--384
+
+ []
+
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 389--395
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 389--395
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 389--395
+
+ []
+
+[15]
+
+LaTeX Warning: Empty `thebibliography' environment on input line 407.
+
+[16] (./InformeFase1.aux) ) 
+Here is how much of TeX's memory you used:
+ 2139 strings out of 495061
+ 25659 string characters out of 1182621
+ 87794 words of memory out of 3000000
+ 5330 multiletter control sequences out of 15000+50000
+ 9676 words of font info for 35 fonts, out of 3000000 for 9000
+ 28 hyphenation exceptions out of 8191
+ 27i,7n,27p,823b,300s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/share/texmf-texlive/fonts/type1/public/amsfont
+s/cm/cmbx10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12
+.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/
+share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-
+texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/font
+s/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/publ
+ic/amsfonts/cm/cmti10.pfb>
+Output written on InformeFase1.pdf (16 pages, 133267 bytes).
+PDF statistics:
+ 83 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+

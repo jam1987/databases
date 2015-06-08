@@ -1,0 +1,406 @@
+\documentclass{article}
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\pagestyle{plain}
+\begin{document}
+\begin{figure}[h]
+
+\includegraphics {/home/julio/usb.jpg}\\
+Depto. de Computaci\'on y Tecnologia de la Informaci\'on\
+
+CI3391 Laboratorio de Bases de Datos 1  \\\\\\\\\\\\\\\\\\\\\
+
+\title{\bf{MODELAJE DE UNA BASE DE DATOS PARA LA RED SOCIAL SoyUSB}}
+    
+  \maketitle
+
+
+\newline
+\newline
+\newline
+\newline
+\newline
+\newline
+\newline
+\newline
+\newline
+\newline
+\author{Julio De Abreu Molina 05-38072}
+\author{Rafael Beltr\'an Da Silva 07-40644}
+
+\newpage
+\tableofcontents
+
+\newpage
+
+\section{INTRODUCCI\'ON}
+
+	Una base de datos es un conjunto de datos relacionados entre s\'i para poder
+resolver un problema en especifico. Unas caracter\'isticas importantes que debe tener
+nuestra base de datos es que debe ser consistente y perdurable.\\
+
+\newline
+
+	El caso de estudio planteado consiste en una red social a ser desarrollada por la Universidad Sim\'on Bol\'ivar (USB), muy similar a las ya conocidas (Facebook, MySpace, Hi5, etc). Esta red debe llevar el nombre de 
+"SoyUSB". Esto se hace con el fin de que la universidad pueda mantener un nexo con cada uno de sus integrantes (Estudiantes, Profesores, Empleados, 
+Egresados, entre otros). Adem\'as de esto, otra de las razones por la cual
+se crea esta red es para mantener informada a la comunidad de la USB acerca de las distintas elecciones a realizarse dentro del campus, los servicios ofrecidos en cada una de las sedes, entre otras informaciones relevantes.
+	En esta primera entrega podremos encontrar el diagrama ERE (Entidad-Relacion-Extendido) de nuestra base de datos, asi como tambi\'en la definici\'on de cada una de las entidades con su respectiva sem\'antica, y con sus respectivos atributos. Adicionalmente expondremos cada una de las interrelaciones definidas en el diagrama con su sem\'antica y sus atributos correspondientes. Y finalmente podremos verificar cada una de las restricciones tanto impl\'icitas como expl\'icitas relacionadas a la base de datos.\\
+
+\newline
+	Para ello, se desea desarrollar una red social con las caracteristicas comunes de un sitio de esta \'indole. Como por ejemplo, cada persona 
+perteneciente o que haya pertenecido a la USB, tiene la potestad de registrarse voluntariamente, dando datos b\'asicos que pasar\'an a ser parte de 
+un PERFIL. Estos miembros pueden establecer relaciones de diferentes \'indole con otros miembros, pueden crear grupos y unirse a ellos, e invitar a otros miembros a unirse, crear eventos e invitar a otros, entre otras actividades comunes de una red social.\\
+
+\newline
+	En esta primera fase nos enfocaremos en el Diseno conceptual de la Base de Datos para la red "SoyUSB". Para ello nos centraremos en tres objetivos principales: Identificar los conceptos fundamentales para resolver el problema, representar los datos en un Diagrama Entidad-Relacio\'on y su respectivo diccionario de datos y por \'ultimo formular cada una de las restricciones, tanto expl\'icitas como impl\'icitas.\\
+
+\newpage
+
+\section{Universo del Discurso}
+	La Universidad Sim\'on Bol\'ivar (USB) tiene entre sus planes el desarrollo de su propia red social, llamada SoyUSB,  esto lo hace con el fin de mantener un nexo con los egresados, para darles a todos los miembros de dicha instituci\'on un sentido de comunidad, independientemente de la posici\'on geogr\'afica de cada una de estas personas. Adem\'as de esto, servir\'a para mantener informados a las personas pertenecientes a esta comunidad acerca de todos los eventos relacionados con la USB, as\'i como tambi\'en las distintas elecciones a realizarse dentro de ambas sedes.
+	Para poder llevar a cabo esta labor, se debe desarrollar una base de datos la cual sirva de apoyo a dicha red. Para ello, los datos a introducir en la misma ser\'an los t\'ipicos datos de las redes sociales ya conocidas, los cuales se presentan a continuaci\'on.
+	Un miembro de la red, es una persona que pertenece o perteneci\'o a la USB. Y esto es un requisito indispensable para poder registrarse en esta red. Esta persona aportar\'a a nuestra base de datos unos datos b\'asicos que formar\'an parte del Perfil. Este deber\'a llevar como m\'inimo el Nombre y Apellido de la persona, Sexo, Ocupaci\'on, Ubicaci\'on en el mundo, Direcci\'on de correo electr\'onico, Nexo con la Usb. Algunos ejemplos para este \'ultimo \'item podr\'ian ser: Estudiante, Egresado (Pregrado), Egresado (Postgrado), Empleado, Profesor (Contratado, ordinario o Jubilado), Empleado de alg\'un instituto asociado a la universidad como por ejemplo: El cafet\'in del Amper, IPP, etc. Y cabe destacar que cada uno de los nexos antes mencionados podr\'an tener atributos asociados.\\
+\newline
+
+	Relaciones con otros miembros: Los miembros pertenecientes a nuestra red podr\'an establecer relaciones con otros miembros de la red. Esta relaci\'on puede ser de distintos tipos. Como por ejemplo: relaci\'on de amistad, graduarse juntos, tutor\'ia, entre otros.
+	Solicitudes de establecer relaci\'on con otro miembro: Los miembros se registran voluntariamente dentro de nuestra red y luego buscan a otros miembros y le hacen la solicitud correspondiente a esas personas encontradas, y luego estas personas deciden si aceptan o no la solicitud. En caso de aceptarla, se establece la relaci\'on.\\
+\newline
+
+	Grupos: Un grupo es definido por un miembro de la red, y la idea es que dicho grupo sea conformado por un conjunto de miembros; el miembro que lo define pertenece al grupo, y luego otros miembros pueden solicitar unirse al grupo. El grupo deber\'a tener algunos datos m\'inimos como por ejemplo: el miembro que lo cre\'o y la fecha de creaci\'on del grupo.
+	Eventos: pueden ser organizados por alg\'un miembro, y son anunciados en la interfaz de SoyUSB, y los miembros muestran su inter\'es en asistir a dicho evento, y dicho inter\'es es reflejado en la interfaz. Una vez que ocurri\'o el evento, debe registrarse la cantidad de miembros que asistieron al evento en cuesti\'on. 
+	Invitaciones: Cuando aparece un evento en la interfaz, se puede invitar a un miembro individual o a un grupo. Y luego cada miembro invitado puede responder a la invitaci\'on o cada miembro perteneciente al grupo invitado, puede aceptar la solicitud.
+	Cada usuario perteneciente a esta red, puede hacer alg\'un grado de personalizaci'on de la interfaz, y esto debe quedar reflejado en la base de datos. (Tomado del Enunciado del Proyecto)\\
+\newline
+
+\newpage
+  
+\section{Diccionario de Datos}
+\subsection{Entidades y sus Atributos}
+La lista de Entidades definida para esta base de datos es la siguiente:\\
+
+
+\newline
+{\bf{MIEMBRO:}}
+	Un miembro de la red social, es una persona que pertenece o perteneci\'o a la USB. Esta persona estar\'a en la capacidad de registrarse o no en la red.\\
+\newline
+
+{\bf{Atributos:}}\\
+
+\newline
+
+\begin{itemize}
+ \item {\bf{IDM (Atributo Clave de MIEMBRO)}}
+\item Nombre
+\item  Apellidos
+\item Fecha de Nacimiento
+\item Sexo
+\item Ocupaci\'on
+\item Ubicaci\'on
+\item Correo Electr\'onico
+\item Tel\'efono 
+\item Descripci\'on Curricular. 
+
+\end{itemize}\\
+
+{\bf{GRUPO}} 
+	Un grupo puede ser definido por cualquier miembro de la red, y la idea es que el grupo sea un conjunto de varios miembros. El miembro que lo crea pertenece al mismo y est\'a capacitado para invitar a otros miembros a unirse.\\
+
+\newline
+{\bf{Atributos:}} 
+\newline
+\begin{itemize}
+\item {\bf{IDG (Atributo Clave para identificar al grupo con un ID)}}
+\item NombreG
+\item Fecha de creaci\'on
+\item IDM del creador.\\
+\end{itemize}\\
+
+\newline
+{\bf{EVENTO:}} Los eventos son acontecimientos que pueden ser organizados por alg\'un miembro, y se anuncia en la interfaz de SoyUSB, y los miembros expresan su inter\'es en asistir a dicho evento.\\
+\newline
+{\bf{Atributos:}}
+\newline 
+\begin{itemize}
+\item{\bf{IDE (Atributo Clave, para identificar a un Evento con un ID)}}
+\item NombreE
+\item Fecha
+\item Hora
+\item Lugar
+\item Duraci\'on
+\item Descripci\'on
+\item IDM Organizador.\\
+
+\end{itemize} \\
+\newline
+{\bf{PROFESOR:}}
+	Un profesor es una persona que da clases en la Universidad. Es una subclase de Miembro, por lo tanto hereda los atributos de MIEMBRO.\\
+\newline
+{\bf{ATRIBUTOS PROPIOS:}}
+\newline
+\begin{itemize}
+ \item {\bf{IDM (Atributo Clave de MIEMBRO)}}
+\item Carnet.
+\item Departamento asociado.
+\item Fecha de Ingreso.
+\item Cargo
+\end{itemize}
+\newline
+{\bf{EMPLEADO}}
+Un empleado es una persona que trabaja dentro de la Universidad o en una instituci\'on asociada a la USB. Es una subclase de Miembro.\\
+
+\newline
+{\bf{ATRIBUTOS PROPIOS:}}
+\newline
+\begin{itemize}
+ \item {\bf{IDM (Atributo Clave de MIEMBRO)}}
+\item  Antig\¨uedad 
+\item Cargo
+\item Fecha de Ingreso
+\item Carnet
+\end{itemize}\\
+\newline
+
+{\bf{ESTUDIANTE}}
+	Un estudiante es una persona que cursa estudios en alguna carrera de la universidad. Puede ser de Pregrado o Postgrado. \\
+\newline
+{\bf{ATRIBUTOS PROPIOS:}}
+\newline
+\begin{itemize}
+ \item {\bf{IDM (Atributo Clave de MIEMBRO)}}
+\item Cohorte
+\item Carnet
+\item Carrera
+\item Tipo
+\end{itemize}\\
+\newline
+
+
+{\bf{EGRESADO}}
+	Un Egresado es una persona que curs\'o estudios de Pregrado o Postgrado dentro de la Universidad.\\
+\newline
+{\bf{ATRIBUTOS PROPIOS:}}
+\newline
+\begin{itemize}
+ \item {\bf{IDM (Atributo Clave de MIEMBRO)}}
+\item Carnet
+\item Carrera
+\item Cohorte
+\item Tipo
+\end{itemize}\\
+\newline
+
+\subsection{Interrelaciones}
+	La lista de Interrelaciones definida en nuestra base de datos es la que sigue a continuaci\'on:\\
+\begin{itemize}
+\item Crea.
+\item Pertenece.
+\item Organiza.
+\item Es invitado a.
+\item Le interesa.
+\item Se Asocia a.
+\item Se relaciona con.\\
+\end{itemize}\\
+\newline
+{\bf{Crea:}} Un miembro de nuestra red define a un grupo, al momento de su creaci\'on.\\
+{\bf{Pertenece:}} Un miembro puede pertenecer o no  a un grupo espec\'ifico.\\
+\newline
+{\bf{ATRIBUTOS:}} 
+\begin{itemize}
+\item Status de la Solicitud.\\
+\end{itemize}\\
+\newline
+{\bf{Organiza:}} Un miembro organiza un evento y puede invitar a otros a asistir.\\
+{\bf{Es Invitado a}} Un miembro es invitado a un evento y \'este muestra su inter\'es en asistir y dicho inter\'es se hace visible a los otros miembros. Tambi\'en puede referirse a la invitaci\'on a un grupo para asistir a un evento.\\
+{\bf{ATRIBUTOS:}} 
+\begin{itemize}
+\item Respuesta\\
+\end{itemize}\\
+\newline
+{\bf{Le interesa}} Un miembro muestra su inter\'es de asistir a un evento espec\'ifico y dicho inter\'es es almacenado en la base de datos.\\
+\newline
+{\bf{ATRIBUTOS:}}
+\begin{itemize}
+\item Intereses
+\item Asisti\'o.
+\end{itemize}\\
+\newline
+{\bf{Se Asocia a:}} Un evento puede estar relacionado con un miembro espec\'ifico, como puede ser asociado a un grupo ya creado dentro de la Red Social.\\
+{\bf{Se relaciona con: }} Un miembro puede establecer o solicitar establecer relaciones con otro miembro de nuestra Red, y el otro miembro podr\'a tener la potestad de aceptar o declinar dicha solicitud.\\
+\newline
+{\bf{ATRIBUTOS:}} 
+\begin{itemize}
+\item Status de Solicitud
+\item Tipo.
+\end{itemize}
+\newline
+\newpage
+
+\section{Diagrama ERE}
+
+\newpage
+
+
+\end{enumerate}
+
+
+\newpage
+
+\section{Traducci\'on al Modelo Relacional}
+
+\begin{enumerate}
+
+\item Entidad MIEMBRO:\\
+
+MIEMBRO(\underline{IDM},Nombre, Apellido, FechaNac, Sexo, Ocupaci\'on, Ubicaci\'on, Correo Electr\'onico)\\
+
+\item Atributo Tel\'efono (Multivaluado):\\
+
+Tel\'efono(\overset{MIEMBRO} {\overline{\overline{\underline{IDM}}} },\underline{N\'umero de Tel\'efono})\\
+
+\item Entidad ESTUDIANTE:\\
+
+ESTUDIANTE(\overset{MIEMBRO} {\overline{\overline{\underline{IDMA}}} },{\underline{Carnet , Carrera o Menci\'on }},Tipo ,Cohorte)\\
+
+\item Entidad PROFESOR:\\
+
+PROFESOR(\overset{MIEMBRO} {\overline{\overline{\underline{IDMA}}} },{\underline{Carnet}}, Departamento Asociado, Fecha de Ingreso, Cargo)\\
+
+\item Entidad EMPLEADO:\\
+
+EMPLEADO(\overset{MIEMBRO} {\overline{\overline{\underline{IDMA}}} },{\underline{Carnet}}, Antiguedad, Cargo, Fecha de Ingreso, Instituci\'on Asociada)\\
+
+\item Entidad EGRESADO:\\
+
+EGRESADO(\overset{MIEMBRO} {\overline{\overline{\underline{IDMA}}} },{\underline{Carnet, Carrera o Menci\'on}}, Tipo, Cohorte)\\
+
+\item Entidad EVENTO:\\
+
+EVENTO( \underline{IDE}},\overset{MIEMBRO} {\overline{\overline{\underline{IDMOrganizador}}} } \quad, Descripci\'on, Duraci\'on, Lugar, Hora y Fecha, Nombre)\\
+
+
+\item Entidad GRUPO:\\
+
+GRUPO(\overset{MIEMBRO} {\overline{\overline{\underline{IDMCreador}}} } \quad,{\underline{IDG}}, NombreG, FechaCreac)\\
+
+\item Interrelaci\'on Se Relaciona Con:\\
+
+SeRelacionaCon(\overset{MIEMBRO} {\overline{\overline{\underline{IDMSolicitante}}} } \quad,\overset{MIEMBRO} {\overline{\overline{\underline{IDMSolicitado}}} } \quad,Tipo)\\
+
+\item Interrelaci\'on Solicita Rel:\\
+
+SolicitaRel(\overset{MIEMBRO} {\overline{\overline{\underline{IDMSolicitante}}} } \quad,\overset{MIEMBRO} {\overline{\overline{\underline{IDMSolicitado}}} } \quad, Status } \quad,Tipo)\\
+
+
+\item Interrelaci\'on Pertenece:\\
+
+
+Pertenece(\overset{MIEMBRO} {\overline{\overline{\underline{IDM}}} } \quad,\overset{GRUPO} {\overline{\overline{\underline{IDG}}} } \quad, Status)\\
+
+\item Interrelaci\'on Le Interesa:\\
+
+LeInteresa(\overset{MIEMBRO} {\overline{\overline{\underline{IDM}}} } \quad,\overset{EVENTO} {\overline{\overline{\underline{IDE}}} } \quad,intereses, asisti\'o)\\
+
+
+\item Interrelaci\'on P Interfaz\\
+
+PInterfaz(\overset{MIEMBRO} {\overline{\overline{\underline{IDMDueno}}} } ,\overset{MIEMBRO} {\overline{\overline{\underline{IDMVisor}}} } ,\underline{SNombre, SApellido, SFechaNac, SSexo},\\
+ \underline{SOcupaci\'on, SUbicaci\'on, SCorreo Electr\'onico})\\
+
+\item Interrelacion P Interfaz a G:\\
+
+PInterfazAG(\overset{MIEMBRO} {\overline{\overline{\underline{IDM}}} } \quad,\overset{GRUPO} {\overline{\overline{\underline{IDG}}} } \quad,\underline{SNombre, SApellido, SFechaNac, SSexo},\\
+\underline{SOcupaci\'on, SUbicaci\'on, SCorreo Electr\'onico})\\
+
+\item Interrelaci\'on Es Invitado A:\\
+
+EsInvitadoA(\overset{MIEMBRO} {\overline{\overline{\underline{IDM}}} } \quad, \overset{EVENTO} {\overline{\overline{\underline{IDE}}} } \quad,Respuesta)\\ 
+
+\item Interrelaci\'on es asociado a:\\
+
+EsAsociadoA(\overset{GRUPO} {\overline{\overline{\underline{IDG}}} } \quad,\overset{EVENTO} {\overline{\overline{\underline{IDE}}} } \quad)\\
+
+\end{enumerate}
+
+
+\newpage
+
+\section{RESTRICCIONES EXPL\'ICITAS PROVENIENTES DEL MODELO RELACIONAL}
+
+\begin{enumerate}
+\item Un miembro no puede relacionarse consigo mismo.
+\newline
+\newline
+\newline
+\newline 
+\item Todo grupo debe estar conformado por al menos un miembro.
+\newline
+\newline
+\newline
+\newline
+\item El nombre es un atributo obligatorio para cada miembro.
+\newline
+\newline
+\newline
+\newline
+\item El apellido es un atributo obligatorio para cada miembro.
+\newline
+\newline
+\newline
+\newline
+\item La fecha de Nacimiento es un atributo obligatorio para cada miembro.
+\newline
+\newline
+\newline
+\newline
+\item El sexo es un atributo obligatorio para cada miembro.
+\newline
+\newline
+\newline
+\newline
+\item La ocupaci\'on es un atributo obligatorio para cada miembro.
+\newline
+\newline
+\newline
+\newline
+\item El correo electr\'onico es un atributo obligatorio para cada miembro.
+\newline
+\newline
+\newline
+\newline
+\item Si un grupo se asocia al evento, todos sus miembros ser\'an invitados al Evento.
+\newline
+\mewline
+\newline
+\newline
+\item Si un miembro permite a un grupo ver su perfil, entonces cada miembro perteneciente a ese grupo podr\'a ver su perfil.
+\newline
+\newline
+\newline
+\newline
+\end{enumerate}
+
+\newpage
+\section{Conclusiones}
+
+	Para poder llevar a cabo el desarrollo del modelo ERE para la Base de Datos de la Red Social "SoyUSB", fue necesario hallar en primera instancia las entidades que formar\'ian parte de nuestro diagrama, tanto d\'ebiles como fuertes, as\'i como cada uno de sus atributos. Cada entidad se encuentra definida dentro del diccionario de datos. Luego, fue necesario definir cada una de las interrelaciones para poder relacionar entidades, con sus respectivos atributos. Y cada uno de estos \'items se encuentran tabi\'en definidos en el diccionario de datos.
+	El siguiente paso fue construir el diagrama ERE que se observa en p\'aginas anteriores. Ah\'i se puede constatar cada una de las entidades e interrelaciones definidas previamente, con su respectiva restricci\'on de cardinalidad.\\
+\newline
+	Finalmente se definieron cada una de las restricciones expl\'icitas para precisamente restringir algunos dominios de las entidades pertenecientes a nuestra base de datos.
+Esta fase del proyecto se le hizo una modificaci\'on sustancial al esquema ERE de nuestra base de datos, en pro de una mejor representaci\'on de la misma. Luego se procedi\'o a, una vez hecha la modificaci\'on del diagrama, a la traducci\'on al modelo relacional. Finalmente se extrajeron las restricciones expl\'icitas originadas de dicha traducci\'on.\\
+\newline
+
+
+ 
+\newpage
+
+\begin{thebibliography} {1}
+Ramez Elmasri
+{\em Fundamentos de Sistemas de Bases de Datos}
+Addison Wesley. 2007.\\
+
+CI3311: Sistemas de Bases de Datos
+{\em Apuntes de clase}
+\end{thebibliography}
+\end{document}

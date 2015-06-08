@@ -1,0 +1,80 @@
+
+Session altered.
+
+
+1 row created.
+
+
+1 row created.
+
+INSERT INTO CINE VALUES ('CCS01','Lider',50.00,10)
+*
+ERROR at line 1:
+ORA-00001: unique constraint (CI339103.PK_ID) violated 
+
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+INSERT INTO SALA VALUES ('CCS04',1,140)
+*
+ERROR at line 1:
+ORA-02291: integrity constraint (CI339103.FK_ID) violated - parent key not 
+found 
+
+
+
+1 row created.
+
+
+1 row created.
+
+INSERT INTO PELICULA VALUES ('P00002','El Vengador','Accion','H','08-MAY-11')
+*
+ERROR at line 1:
+ORA-02290: check constraint (CI339103.CK_BOL) violated 
+
+
+INSERT INTO FUNCION VALUES ('CCS01',2,'20-MAY-11 3:30pm','P00001',2400.00,100)
+*
+ERROR at line 1:
+ORA-02291: integrity constraint (CI339103.FK_FUNNUMERO) violated - parent key 
+not found 
+
+
+INSERT INTO FUNCION VALUES ('CCS02',1,'20-MAY-11 5:15pm','P00002',3600.00,120)
+*
+ERROR at line 1:
+ORA-02291: integrity constraint (CI339103.FK_FUN2) violated - parent key not 
+found 
+
+
+INSERT INTO FUNCION VALUES ('CCS03',1,'20-MAY-11 4:40pm','P00001',5500.00,110)
+*
+ERROR at line 1:
+ORA-02291: integrity constraint (CI339103.FK_FUNNUMERO) violated - parent key 
+not found 
+
+
+INSERT INTO FUNCION VALUES ('MRG01',1,'2O-MAY-11 9:10pm','P00002',3900.00,130)
+                                      *
+ERROR at line 1:
+ORA-01861: literal does not match format string 
+
+
+
+1 row created.
+
+INSERT INTO SE_ESTRENA VALUES('CCS02','P00002')
+*
+ERROR at line 1:
+ORA-02291: integrity constraint (CI339103.FK_PELICULA) violated - parent key 
+not found 
+
+

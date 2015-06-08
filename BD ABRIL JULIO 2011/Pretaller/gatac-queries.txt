@@ -1,0 +1,34 @@
+
+IDPELI TITULO                                             CATEGORIA             
+------ -------------------------------------------------- ---------------       
+FECHA_ESTRENO     IDCIN NOMBRE                                                  
+----------------- ----- --------------------------------------------------      
+P00003 Deseando Amar                                      Romance               
+26-JUN-02 12:00AM CCS02 Sambil                                                  
+                                                                                
+P00003 Deseando Amar                                      Romance               
+26-JUN-02 12:00AM CCS03 Recreo                                                  
+                                                                                
+P00007 Infidelidad                                        Drama                 
+03-JUL-02 12:00AM CCS01 Concresa                                                
+                                                                                
+
+IDPELI TITULO                                             CATEGORIA             
+------ -------------------------------------------------- ---------------       
+FECHA_ESTRENO     IDCIN NOMBRE                                                  
+----------------- ----- --------------------------------------------------      
+P00007 Infidelidad                                        Drama                 
+03-JUL-02 12:00AM CCS03 Recreo                                                  
+                                                                                
+
+
+IDCIN NOMBRE                                                                    
+----- --------------------------------------------------                        
+CCS02 Sambil                                                                    
+CCS03 Recreo                                                                    
+VAL01 Trigal                                                                    
+CCS01 Concresa                                                                  
+
+
+no rows selected
+

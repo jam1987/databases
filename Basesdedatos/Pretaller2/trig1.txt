@@ -1,0 +1,25 @@
+
+Trigger created.
+
+
+Trigger created.
+
+
+Session altered.
+
+INSERT INTO CONSUMO VALUES ( 'C003', 'R023','S005','E', 130000.00,'23-JUN-10 9:00am','F056')
+            *
+ERROR at line 1:
+ORA-20300: FECHA23-JUN-10 09:00AMFUERA DEL RANGO DE RESERVA 
+ORA-06512: at "CI339133.ASIGNACONSUMO", line 23 
+ORA-04088: error during execution of trigger 'CI339133.ASIGNACONSUMO' 
+
+
+INSERT INTO ASIGNA VALUES('C005','R023',1,1)
+            *
+ERROR at line 1:
+ORA-20302: NUMERO DE PERSONAS INCORRECTO 
+ORA-06512: at "CI339133.ASIGNAR", line 25 
+ORA-04088: error during execution of trigger 'CI339133.ASIGNAR' 
+
+

@@ -1,0 +1,20 @@
+
+Procedure created.
+
+
+PL/SQL procedure successfully completed.
+
+
+CODI FECHA_CIE MONTO_TOTAL                                                      
+---- --------- -----------                                                      
+R007 19-JUN-10      150000                                                      
+R008 19-JUN-10       60000                                                      
+R010 19-JUN-10      140000                                                      
+R011 19-JUN-10      423000                                                      
+R012 19-JUN-10      233000                                                      
+R017 19-JUN-10      498000                                                      
+R003 10-JUN-10       60000                                                      
+R005 10-JUN-10       80000                                                      
+
+8 rows selected.
+

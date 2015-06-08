@@ -1,0 +1,12 @@
+
+CONSTRAINT DOM_unidadfabi CHECK (0<=alicuota<=1),
+CONSTRAINT DOM_unidadfabi1 CHECK (area>0),
+CONSTRAINT DOM_proveedorfabi CHECK(REGEXP_LIKE(rif,'^[vVeEeJ]-[[:digit:]]{8}$')),
+CONSTRAINT DOM_gastofabi CHECK CHECK(REGEXP_LIKE(rif,'^[vVeEeJ]-[[:digit:]]{8}$')),
+CONSTRAINT DOM_unidadfabi2 CHECK(REGEXP_LIKE(ciPosee,'^[vVeE]-[[:digit:]]{8}$')),
+CONSTRAINT DOM_unidadfabi3 CHECK email (length(trim(translate(email,'@','')))=length(email)-1),
+
+
+
+
+

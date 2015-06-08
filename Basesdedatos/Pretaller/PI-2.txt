@@ -1,0 +1,25 @@
+ ****************************PREGUNTA 2****************************
+
+
+Respuestas a todos los items de la pregunta nro. 2 del Pre-taller
+
+
+2. ¿Qué significa que una consulta sea anidada? y ¿cuáles son los operadores de SQL que
+permiten expresar consultas anidadas?
+
+ Una consulta es anidada cuando se requiere hacer una subconsulta sobre la consulta general, es decir, por ejemplo, si en una consulta queremos obtener a los empleados cuyos salarios sean mayores a los de un empleado dado, seria conveniente ver primero el salario de dicho empleado antes de listar a los empleados buscados. Esto es un claro ejemplo de una consulta anidada, porque dentro de la consulta de los empleados a buscar, se desea buscar el salario del empleado dado. Esto en SQL es posible ya que la sintaxis para hacer consultas anidadas en SQL es de la siguiente forma:
+  
+            SELECT select_list
+            FROM table
+            WHERE  expr_operator  (SELECT select_list
+                                     FROM  table);
+
+         Algo a  resaltar, en el WHERE, los operadores pueden ser de igualdad o comparadores (>,<,>=,<=). Esto puede ir seguido por alguno de los siguientes comandos:
+
+ALL: Significa que la subconsulta se hara en todas las filas de la tabla principal.
+ANY:  Significa que la subconsulta se hara en cualquiera de las filas de la tabla principal.
+IN: Igual a cualquier miembro de la lista.
+
+Estos operadores se colocan en caso de que se desee hacer la subconsulta se haga sobre varias filas. En caso que el numero de filas a consultar sea igual a 1, se omiten.
+
+           
